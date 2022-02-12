@@ -14,7 +14,6 @@ bool CheckLuaResult(lua_State* L, int ret){
     return true;
 }
 
-
 int main(){
     lua_State *L = luaL_newstate();
     luaL_openlibs(L);//load lua standard libs

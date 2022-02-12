@@ -10,3 +10,4 @@ INCLUDE_DIRECTORIES(${LUA_DIR}/include/lua)
 LINK_DIRECTORIES(${LUA_DIR}/lib)
 
 add_subdirectory(LuaDoString)
+add_subdirectory(EmbeddingLua)
