@@ -21,7 +21,7 @@ int main(){
     if(CheckLuaResult(L,luaL_dofile(L,"../../LuaDoString/example.lua"))){
         lua_getglobal(L,"a");
         if(lua_isnumber(L,-1)){
-            float a_in_cpp = (float ) lua_tonumber(L,-1);
+            auto a_in_cpp =  lua_tonumber(L,-1);
             std::cout<<"a_in_cpp = "<<a_in_cpp<<std::endl;
         }
     }
